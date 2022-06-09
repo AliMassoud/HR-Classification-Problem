@@ -8,14 +8,14 @@ model_name = 'src/ML_code/Models/model.sav'
 
 
 def make_predictions(input_data: pd.DataFrame) -> np.ndarray:
-    data = preprocess_py.before_split_data_type(input_data)
-    if('Metier' in data.columns.values):
-        X = data.sort_index(axis=1).drop(['Metier'], axis=1)
+    if('Metier' in input_data.columns.values):
+        X = input_data.sort_index(axis=1).drop(['Metier'], axis=1)
     else:
-        X = data
+        X = input_data
+    X = preprocess_py.before_split_data_type(X)
+
     Ordinal, numeric = preprocess_py.split_(X)
-    x_test = preprocess_py.preprocess(Ordinal, numeric,
-                                      dataset_Typee=True)
+    x_test = preprocess_py.preprocess(Ordinal, numeric, dataset_Typee=True)
     
     loaded_model = joblib.load(model_name)
     y_pred = loaded_model.predict(x_test)

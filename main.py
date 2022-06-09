@@ -16,4 +16,5 @@ def predict_():
     predictions = make_predictions(user_data_df)
     print(predictions)
 
-train_model()
+# train_model()
+predict_()

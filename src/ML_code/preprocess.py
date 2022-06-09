@@ -1,3 +1,4 @@
+from distutils import text_file
 from re import X
 import string
 import numpy as np
@@ -51,21 +52,40 @@ def Encoded_Ordinal(categorical_features_Ord: pd.DataFrame) -> pd.DataFrame:
 
 # split data to Numeric, Nominal and Ordinal
 def split_(x: pd.DataFrame):
-    Ordinal = x[['Diplome', 'Technologies', 'Ville']]
+    new_df = (x['Technologies'].explode()
+   .groupby(level=0).value_counts()
+   .unstack(fill_value=0)
+   .reindex(x.index, fill_value=0)
+    )
+
+    ret = x.join(new_df)
+    Ordinal = ret[['Diplome', 'Ville', 'Entreprise']]
     # Not_Ordinal = x[['Technologies', 'Ville', 'Entreprise']]
-    numeric = x[['Experience']]
+    numeric = ret.drop(['Diplome', 'Technologies', 'Ville', 'Entreprise'], axis=1)
     # return Ordinal, Not_Ordinal, numeric
     return Ordinal, numeric
+
+
 #  using Standard scaler on the data after I cleaned and encoding it.
 def scale_final_data(x: pd.DataFrame, dataset_Type: bool) -> pd.DataFrame:
     if(dataset_Type is False):
         scaler = StandardScaler()
-        scaler.fit(x)
+        t = scaler.fit(x)
         dump(scaler, open(scaler_file, "wb"))
     elif(dataset_Type is True):
+        txt_file = open("data_format.txt", "r")
+        columns_names = txt_file.read()
+        columns_names = columns_names.split('\n')
+        columns_names = [x for x in columns_names if x]
+        txt_file.close()
+        for i in columns_names:
+            if(i not in x.columns.values):
+                x[[i]] = 0
         scaler = load(open(scaler_file, "rb"))
-        scaler.transform(x)
+        scaled = scaler.transform(x)
+        return scaled
     return x
+
 
 def before_split_data_type(dataset: pd.DataFrame):
     if('Ville,,,,' in dataset.columns.values):
@@ -86,22 +106,13 @@ def before_split_data_type(dataset: pd.DataFrame):
 # fill Nan values with the most repeated (mode)
     dataset = dataset.fillna(dataset.mode().iloc[0])
 # extract technologies, instead of having them all in one a stirng of form C/C++ ... we have only one technology per row, (expanded the dataset).
-    ext_techno_np =[]
-    columns_names = dataset.columns
     for index, row in dataset.iterrows():
         technologies = dataset['Technologies'][index].split('/')
-        for i in technologies:
-            temp = row.copy()
-            temp['Technologies']= i
-            ext_techno_np.append(temp.values)
-    # dataset[['Entreprise','Metier','Diplome','Experience','Ville']]
-    ext_techno_df = pd.DataFrame(ext_techno_np, columns=[columns_names.values])
+        dataset['Technologies'][index] = technologies
     for val in ['NoSQ']:
-        ext_techno_df.replace(val, 'NoSQL', inplace=True)
-    for val in ['']:
-        ext_techno_df.replace(val, ext_techno_df.mode().iloc[0], inplace=True)
+        dataset.replace(val, 'NoSQL', inplace=True)
 #  the values in Experience are in string format and the decimal point is represented by a cumma ',' (2,5) I am replacing them with the format (2.5)
-    temp2_Experience_np = ext_techno_df['Experience'].values
+    temp2_Experience_np = dataset['Experience'].values
     temp_experience_list = []
     for i in temp2_Experience_np:
         if(',' in i[0]):
@@ -111,11 +122,10 @@ def before_split_data_type(dataset: pd.DataFrame):
         else:
             t = float(i[0])
             temp_experience_list.append(t)
-    
     Experience = np.array(temp_experience_list)
-    ext_techno_df['Experience'] = Experience
+    dataset['Experience'] = Experience
 
-    return ext_techno_df
+    return dataset
 
 
 def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
@@ -126,19 +136,23 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
         # oh_encoder.fit(Not_Ordinal)
         dump(enc, open(ordinal_encoder_file, "wb"))
         # dump(oh_encoder, open(one_hot_encoder_file, "wb"))
-
     ordinal = Encoded_Ordinal(Ordinal)
+
     # Not_ordinal = get_Encoded_OneHot_Encoder(Not_Ordinal)
     ordinal.reset_index()
     numeric.reset_index()
     # Not_ordinal.reset_index()
     numeric_ordinal = numeric.join(ordinal)
+    if('' in numeric_ordinal.columns.values):
+        numeric_ordinal = numeric_ordinal.drop(columns='')
+    if(dataset_Typee == False):
+        np.savetxt('data_format.txt',numeric_ordinal.columns.values, fmt='%s')
     numeric_ordinal = numeric_ordinal.fillna(numeric_ordinal.median())
     numeric_ordinal.rename(columns = {'(Experience,)':'Experience'}, inplace = True)
     # final = numeric_norminal.join(Not_ordinal)
     numeric_ordinal.interpolate(method='linear', limit_direction='forward', inplace=True)
     numeric_ordinal.interpolate(method='linear', limit_direction='backward', inplace=True)
 
+
     x = scale_final_data(numeric_ordinal, dataset_Typee)
-    print(x)
     return x

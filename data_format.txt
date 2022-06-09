@@ -1,0 +1,64 @@
+Experience
+AI
+AWS
+Anglais
+Big data
+C
+C++
+Cassandra
+Deep learning
+Docker
+Elasticsearch
+Excel
+GNU
+HBASE
+HDFS
+Hadoop
+Hadoop(HDFS)
+Hive
+Java
+Kafka
+Kibana
+Linux
+Machine learning
+Map-Reduce
+MariaDB
+Matlab
+Matplotlib
+Microsoft Azure
+MongoDB
+MySQL
+NoSQ
+NoSQL
+ORACLE
+PIG
+Perl
+PostgreSQL
+PySpark
+Pycharm
+Pyspark
+Python
+R
+Redshift
+Ruby
+SAS
+SPSS
+SQL
+Scala
+Scikit-learn
+Scoring
+Spark
+Tableau
+Tensorflow
+Teradata
+VBA
+Vertica
+Windows
+Yarn
+anglais
+machine learning
+numpy
+scikit-learn
+D
+V
+E
