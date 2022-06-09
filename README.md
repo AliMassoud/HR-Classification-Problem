@@ -14,6 +14,18 @@ then run the flask app
 ```
 run flask
 ```
+To Test the API after running the flask app,  
+the Route of the API is: **/Submit**  
+and please use this JSON format in Postman program or any other program to test it:
+```json
+{
+    "Entreprise": "pivot&CO",
+    "Technologies": "Python/Microsoft Azure/R/SQL",
+    "Diplome": "Master",
+    "Experience": "7",
+    "Ville": "Toulouse"
+}
+```
 ------------------------------------------------------------------
 To run the **ML-model** (Training) please execute this
 ```
