@@ -137,7 +137,6 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
         dump(enc, open(ordinal_encoder_file, "wb"))
         # dump(oh_encoder, open(one_hot_encoder_file, "wb"))
     ordinal = Encoded_Ordinal(Ordinal)
-
     # Not_ordinal = get_Encoded_OneHot_Encoder(Not_Ordinal)
     ordinal.reset_index()
     numeric.reset_index()
@@ -152,7 +151,6 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
     # final = numeric_norminal.join(Not_ordinal)
     numeric_ordinal.interpolate(method='linear', limit_direction='forward', inplace=True)
     numeric_ordinal.interpolate(method='linear', limit_direction='backward', inplace=True)
-
 
     x = scale_final_data(numeric_ordinal, dataset_Typee)
     return x

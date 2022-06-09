@@ -16,7 +16,6 @@ def make_predictions(input_data: pd.DataFrame) -> np.ndarray:
 
     Ordinal, numeric = preprocess_py.split_(X)
     x_test = preprocess_py.preprocess(Ordinal, numeric, dataset_Typee=True)
-    
     loaded_model = joblib.load(model_name)
     y_pred = loaded_model.predict(x_test)
     return y_pred
