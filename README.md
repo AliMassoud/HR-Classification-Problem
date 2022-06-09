@@ -26,6 +26,7 @@ and please use this JSON format in Postman program or any other program to test 
     "Ville": "Toulouse"
 }
 ```
+- For testing using .csv file, kindly use the Route **/SubmitFile**.  
 ------------------------------------------------------------------
 To run the **ML-model** (Training) please execute this
 ```
