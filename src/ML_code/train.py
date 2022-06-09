@@ -4,11 +4,8 @@ import numpy as np
 import pandas as pd
 import src.ML_code.preprocess as preprocess_py
 import joblib
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
-from sklearn.cluster import KMeans
-from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 
@@ -77,11 +74,12 @@ def build_model(data: pd.DataFrame) -> dict[str, str]:
     x_test = preprocess_py.preprocess(Ord_test,
                                       numeric_test, dataset_Typee=True)
 # Tune the model
-    # best_score, best_params =Tune_Random_Forest(x_train, y_train)
-    # print(best_score)
+    best_score, best_params =Tune_Random_Forest(x_train, y_train)
+    print(best_score)
 
-    mod = DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
-    # print(x_train.head())
+    mod = RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
+    # DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
+
 # fit the model & save it in Models directory + print the Metrics of the model (Precision + Recall)
     mod.fit(x_train, y_train)
 
