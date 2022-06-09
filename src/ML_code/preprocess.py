@@ -74,6 +74,12 @@ def before_split_data_type(dataset: pd.DataFrame):
 # I am converting the Diplomes to lower case because for instance there is MSC and msc values
     for index, row in dataset.iterrows():
         dataset['Diplome'][index] = row['Diplome'].lower()
+# I merged 'no Diploma' and 'no', and 'mastere' and 'master'
+    for val in ['mastere']:
+        dataset['Diplome'].replace(val, 'master', inplace=True)
+
+    for val in ['no']:
+        dataset['Diplome'].replace(val, 'no diploma', inplace=True)
 # in the Ville column, some values have the form like "Paris,,,,", so I am removing the commas
     for index, row in dataset.iterrows():
         dataset['Ville'][index] = row['Ville'].split(",")[0]
@@ -90,6 +96,8 @@ def before_split_data_type(dataset: pd.DataFrame):
             ext_techno_np.append(temp.values)
     # dataset[['Entreprise','Metier','Diplome','Experience','Ville']]
     ext_techno_df = pd.DataFrame(ext_techno_np, columns=[columns_names.values])
+    for val in ['NoSQ']:
+        ext_techno_df.replace(val, 'NoSQL', inplace=True)
     for val in ['']:
         ext_techno_df.replace(val, ext_techno_df.mode().iloc[0], inplace=True)
 #  the values in Experience are in string format and the decimal point is represented by a cumma ',' (2,5) I am replacing them with the format (2.5)
@@ -132,4 +140,5 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
     numeric_ordinal.interpolate(method='linear', limit_direction='backward', inplace=True)
 
     x = scale_final_data(numeric_ordinal, dataset_Typee)
+    print(x)
     return x

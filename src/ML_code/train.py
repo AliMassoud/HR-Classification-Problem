@@ -22,7 +22,7 @@ def Save_(x: pd.DataFrame, y: pd.DataFrame, filepath: string):
     ], axis=1)
     my_data.to_csv(filepath)
 
-def compute_metrics(y_pred, y_test):
+def compute_metrics(y_pred, y_test, model_name_):
     
     accuracy = round(accuracy_score(y_test, y_pred), 2)
     precision = round(precision_score(y_test, y_pred, average='micro'),2)
@@ -35,7 +35,7 @@ def compute_metrics(y_pred, y_test):
         'Accuracy': accuracy,
         'Precision': precision,
         'Recall': recall,
-    }, index=['RandomForest'])
+    }, index=[model_name_])
 
 
 
@@ -53,6 +53,85 @@ def Tune_Random_Forest(X_train, y_train):
 
 
 
+# def build_model(data: pd.DataFrame) -> dict[str, str]: ##########################
+#     # clean data
+#     data = preprocess_py.before_split_data_type(data)
+#     Y = data['Metier']
+#     Y = preprocess_py.encode_target(Y)
+#     X = data.sort_index(axis=1).drop(['Metier'], axis=1)
+
+#     X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
+# # save data
+#     Save_(X_train, y_train, train_data_path_after_split)
+#     Save_(X_test, y_test, test_data_path_after_split)
+# # split data to Numeric, Ordinal, and Nominal (Not_Ordinal)
+#     Ord_train, numeric_train = preprocess_py.split_(X_train)
+#     x_train = preprocess_py.preprocess(Ord_train,
+#                                        numeric_train, dataset_Typee=False)
+
+#     Ord_test, numeric_test = preprocess_py.split_(X_test)
+#     x_test = preprocess_py.preprocess(Ord_test,
+#                                       numeric_test, dataset_Typee=True)
+# # Tune the model
+#     # best_score, best_params =Tune_Random_Forest(x_train, y_train)
+#     # print(best_score)
+
+#     mod = DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
+#     # RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
+#     # DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
+#     model_name_ = 'Decision_Tree'
+# # fit the model & save it in Models directory + print the Metrics of the model (Precision + Recall)
+#     mod.fit(x_train, y_train)
+
+#     joblib.dump(mod, model_name)
+
+#     y_pred = mod.predict(x_test)
+    
+#     result = compute_metrics(y_pred, y_test['Metier'].values, model_name_)
+
+#     return result
+
+
+
+
+
+# def build_model(data: pd.DataFrame) -> dict[str, str]: #############################
+#     # clean data
+#     data = preprocess_py.before_split_data_type(data)
+#     Y = data['Metier']
+#     Y = preprocess_py.encode_target(Y)
+#     X = data.sort_index(axis=1).drop(['Metier'], axis=1)
+
+
+# # save data
+#     # Save_(X_train, y_train, train_data_path_after_split)
+#     # Save_(X_test, y_test, test_data_path_after_split)
+# # split data to Numeric, Ordinal, and Nominal (Not_Ordinal)
+#     Ord_train, numeric_train = preprocess_py.split_(X)
+#     x_processed = preprocess_py.preprocess(Ord_train,
+#                                        numeric_train, dataset_Typee=False)
+    
+#     X_train, X_test, y_train, y_test = train_test_split(x_processed, Y, test_size=0.2, random_state=0)
+# # Tune the model
+#     # best_score, best_params =Tune_Random_Forest(x_train, y_train)
+#     # print(best_score)
+
+#     mod = DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
+#     # RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
+#     # DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
+#     model_name_ = 'Decision_Tree'
+# # fit the model & save it in Models directory + print the Metrics of the model (Precision + Recall)
+#     mod.fit(X_train, y_train)
+
+#     joblib.dump(mod, model_name)
+
+#     y_pred = mod.predict(X_test)
+    
+#     result = compute_metrics(y_pred, y_test['Metier'].values, model_name_)
+
+#     return result
+
+
 def build_model(data: pd.DataFrame) -> dict[str, str]:
     # clean data
     data = preprocess_py.before_split_data_type(data)
@@ -60,34 +139,31 @@ def build_model(data: pd.DataFrame) -> dict[str, str]:
     Y = preprocess_py.encode_target(Y)
     X = data.sort_index(axis=1).drop(['Metier'], axis=1)
 
-    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
+
 # save data
-    Save_(X_train, y_train, train_data_path_after_split)
-    Save_(X_test, y_test, test_data_path_after_split)
-    # Save_(X_val, y_val, val_data_path_after_split)
+    # Save_(X_train, y_train, train_data_path_after_split)
+    # Save_(X_test, y_test, test_data_path_after_split)
 # split data to Numeric, Ordinal, and Nominal (Not_Ordinal)
-    Ord_train, numeric_train = preprocess_py.split_(X_train)
-    x_train = preprocess_py.preprocess(Ord_train,
+    Ord_train, numeric_train = preprocess_py.split_(X)
+    x_processed = preprocess_py.preprocess(Ord_train,
                                        numeric_train, dataset_Typee=False)
-
-    Ord_test, numeric_test = preprocess_py.split_(X_test)
-    x_test = preprocess_py.preprocess(Ord_test,
-                                      numeric_test, dataset_Typee=True)
+    
+    X_train, X_test, y_train, y_test = train_test_split(x_processed, Y, test_size=0.3, random_state=0)
 # Tune the model
-    # best_score, best_params =Tune_Random_Forest(x_train, y_train)
-    # print(best_score)
+    best_score, best_params =Tune_Random_Forest(X_train, y_train)
+    print(best_score)
 
-    mod = DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 16)
+    mod = RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
     # RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
     # DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
-
+    model_name_ = 'Decision_Tree'
 # fit the model & save it in Models directory + print the Metrics of the model (Precision + Recall)
-    mod.fit(x_train, y_train)
+    mod.fit(X_train, y_train)
 
     joblib.dump(mod, model_name)
 
-    y_pred = mod.predict(x_test)
+    y_pred = mod.predict(X_test)
     
-    result = compute_metrics(y_pred, y_test['Metier'].values)
+    result = compute_metrics(y_pred, y_test['Metier'].values, model_name_)
 
     return result

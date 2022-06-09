@@ -33,3 +33,16 @@ def submit():
     "Ville": my_data['Ville'].values[0],
     "Prediction": json.dumps(temp_df['Result'].to_dict())
     }
+
+
+
+@app.route('/SubmitFile', methods=["GET"])
+def index():
+    if request.method == 'GET':
+        saved_file = request.files['data_file']
+        df = pd.read_csv(saved_file, sep=';')
+        # g_list = dict()
+        g = []
+        result = make_predictions(df)
+        print(result)
+    return "Hello"

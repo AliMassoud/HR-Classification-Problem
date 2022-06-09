@@ -208,7 +208,7 @@
 15416,no diploma,McKinsey & Company,0.5,AWS,Bordeaux,0
 20386,phd,Ball Aerospace,1.5,Anglais,Toulouse,2
 12542,no diploma,Ball Aerospace,0.0,Hadoop,Paris,0
-18999,master,The Home Depot,3.5,NoSQ,Toulouse,1
+18999,master,The Home Depot,3.5,NoSQL,Toulouse,1
 17646,bsc,Ball Aerospace,15.0,Cassandra,Paris,0
 16206,master,Liberty Mutual,5.0,Elasticsearch,Paris,0
 11631,master,Santanna Energy Services,3.5,SQL,Marseille,1
@@ -265,7 +265,7 @@
 17247,phd,Ball Aerospace,0.5,SQL,Rouen,2
 29815,phd,Ball Aerospace,2.0,Linux,Paris,0
 5710,bachelor,S&P Global Ratings,3.5,Spark,Paris,0
-20067,master,Ball Aerospace,2.5,NoSQ,Nantes,1
+20067,master,Ball Aerospace,2.5,NoSQL,Nantes,1
 11319,phd,Accenture,4.0,Docker,Marseille,0
 3234,master,Twitter,7.0,HDFS,Lyon,1
 40103,phd,State Street,2.5,Spark,Lyon,1
@@ -571,7 +571,7 @@
 4172,no diploma,Massachusetts General Hospital(MGH),1.5,C,Paris,0
 42786,master,Ball Aerospace,7.0,Java,Marseille,1
 5423,master,Leidos,2.0,Excel,Rennes,2
-25096,no diploma,Fooda,0.5,NoSQ,Paris,1
+25096,no diploma,Fooda,0.5,NoSQL,Paris,1
 8471,master,Ball Aerospace,0.5,Python,Strasbourg,0
 31435,master,Cambridge Consultants,1.0,C++,Lille,0
 41803,bachelor,Facebook,1.5,C,Strasbourg,2
@@ -739,7 +739,7 @@
 379,master,Ball Aerospace,2.5,machine learning,Nantes,3
 25335,msc,Neon Therapeutics,11.0,R,Marseille,2
 4445,phd,Soroco,3.0,R,Toulouse,3
-41860,no,Ball Aerospace,0.0,R,Lyon,2
+41860,no diploma,Ball Aerospace,0.0,R,Lyon,2
 20862,phd,"Carters, Inc",7.0,AI,Lyon,2
 35322,phd,"TekPartners, A P2P Company",2.5,Machine learning,Lyon,3
 39053,master,Ball Aerospace,1.5,VBA,Lyon,2
@@ -851,7 +851,7 @@
 19530,phd,GEORGIA-PACIFIC,1.5,Microsoft Azure,Toulouse,2
 25649,no diploma,Autodesk,15.0,Python,Bordeaux,1
 40658,phd,Shutterstock,1.5,Python,Lyon,2
-26576,master,Will-N-Able,1.0,NoSQ,Toulon,1
+26576,master,Will-N-Able,1.0,NoSQL,Toulon,1
 38444,msc,Wholefoods,0.0,SPSS,Paris,2
 15998,master,TechnoGen Inc,1.5,Deep learning,Marseille,2
 12673,bsc,Novartis,17.0,SPSS,Paris,2
@@ -937,7 +937,7 @@
 21274,bachelor,Thermo Fisher Scientific,1.0,Docker,Nantes,0
 587,msc,Exponent,0.5,Excel,Lyon,2
 24192,phd,Howard Hughes Medical Institute,2.0,Python,Rouen,3
-9533,no,CDK Global,3.5,Hadoop(HDFS),Toulouse,0
+9533,no diploma,CDK Global,3.5,Hadoop(HDFS),Toulouse,0
 10259,bachelor,Ball Aerospace,3.0,Python,Bordeaux,3
 42641,msc,Emory University,2.0,C,Bordeaux,2
 39711,msc,Ball Aerospace,1.0,C,Toulouse,1
@@ -958,7 +958,7 @@
 18450,master,BlueLabs Analytics,3.5,C,Lyon,1
 37587,msc,Ball Aerospace,0.0,machine learning,Paris,3
 38830,master,Resource Technology Partners,0.5,Hadoop,Lyon,1
-25398,no diploma,Ball Aerospace,2.5,NoSQ,Marseille,1
+25398,no diploma,Ball Aerospace,2.5,NoSQL,Marseille,1
 33903,master,JD.com,0.5,R,Paris,2
 31239,phd,UCLA,0.5,Python,Paris,2
 36094,master,Ball Aerospace,2.5,Spark,Lyon,2
@@ -1042,7 +1042,7 @@
 12331,bachelor,Amazon.com,2.5,Map-Reduce,Bordeaux,1
 34156,phd,Citi,3.0,Python,Lille,3
 37523,master,Lab126,0.0,Big data,Bordeaux,2
-32734,mastere,Code Pilot,5.0,R,Lille,3
+32734,master,Code Pilot,5.0,R,Lille,3
 33222,bachelor,Invenia Resourcing,1.5,Anglais,Paris,3
 29906,no diploma,Nielsen,13.0,MariaDB,Lyon,1
 21844,no diploma,Scientific Research Corporation,0.5,Spark,Marseille,1
@@ -1337,7 +1337,7 @@
 25399,no diploma,Ball Aerospace,2.5,SQL,Marseille,1
 8096,master,Pharmerit International,2.5,Hive,Paris,3
 14321,msc,Ball Aerospace,2.5,C++,Paris,2
-2329,no diploma,Leidos,3.5,NoSQ,Marseille,1
+2329,no diploma,Leidos,3.5,NoSQL,Marseille,1
 10591,phd,Ball Aerospace,1.0,R,Paris,2
 32558,msc,McKinsey & Company,3.5,Python,Bordeaux,3
 21060,phd,Ball Aerospace,2.5,C++,Lyon,2
@@ -1594,7 +1594,7 @@
 4013,master,"Quadratic Systems, Inc.",1.5,Tableau,Paris,0
 21592,bachelor,Ball Aerospace,15.0,Python,Montpellier,1
 24902,master,Missing Link Security,2.0,R,Lyon,2
-4637,no,Bevi,7.0,Hadoop,Lille,0
+4637,no diploma,Bevi,7.0,Hadoop,Lille,0
 35431,master,Cedars-Sinai Medical Center,5.0,GNU,Paris,1
 15652,bachelor,Capital One,1.5,Python,Toulouse,0
 42664,phd,Carney,1.5,C++,Marseille,1
@@ -1789,7 +1789,7 @@
 8249,phd,Ball Aerospace,0.5,Python,Lyon,2
 5309,msc,Ball Aerospace,0.5,PIG,Grenoble,1
 31942,no diploma,Boston Medical Center (BMC),1.5,Java,Marseille,0
-5183,master,Jacobs,1.5,NoSQ,Toulouse,1
+5183,master,Jacobs,1.5,NoSQL,Toulouse,1
 39926,phd,DataRobot,0.5,Python,Lille,2
 24668,master,Ball Aerospace,3.5,SQL,Paris,3
 43382,master,Relus Cloud,17.0,Anglais,Lyon,3
@@ -1915,7 +1915,7 @@
 42597,phd,Cognitive Scale,3.5,SQL,Toulouse,3
 8415,phd,"ScaleFactor, Inc.",1.5,SQL,Rennes,2
 4976,msc,IHS Markit,4.0,SQL,Lyon,3
-6866,mastere,ICF,4.0,Docker,Grenoble,0
+6866,master,ICF,4.0,Docker,Grenoble,0
 242,master,Natera,3.0,Python,Paris,2
 40047,master,Visa,2.5,Excel,Lyon,3
 36632,master,Emory University,7.0,SPSS,Marseille,2
@@ -2221,7 +2221,7 @@
 39659,bsc,"RetailMeNot, Inc.",7.0,R,Paris,2
 31751,no diploma,Thermo Fisher Scientific,4.0,Linux,Paris,0
 10537,bsc,PPD,2.0,Linux,Marseille,1
-41864,no,Ball Aerospace,0.0,C++,Lyon,2
+41864,no diploma,Ball Aerospace,0.0,C++,Lyon,2
 2717,master,GreenSky,2.5,C,Strasbourg,3
 9004,phd,OneGlobe,0.5,C,Marseille,2
 917,master,Nanigans,5.0,Hive,Marseille,0
@@ -2552,7 +2552,7 @@
 32721,master,RTI International,1.5,Excel,Paris,2
 13171,master,United States Soccer Federation,0.0,Docker,Strasbourg,1
 14124,no diploma,Ardent Eagle Solutions,1.5,Elasticsearch,Toulouse,0
-17809,master,DV Trading LLC,1.5,NoSQ,Rouen,1
+17809,master,DV Trading LLC,1.5,NoSQL,Rouen,1
 30456,bachelor,Brigham & Women's Hospital(BWH),0.0,R,Marseille,3
 11591,phd,State Street,1.5,SQL,Toulouse,3
 35339,master,HelloFresh,0.5,Python,Nantes,2
@@ -2641,7 +2641,7 @@
 37306,master,Ball Aerospace,2.5,Deep learning,Paris,2
 17312,master,Ball Aerospace,1.0,R,Toulouse,2
 17152,msc,Capgemini,3.5,GNU,Paris,1
-13094,master,Ball Aerospace,5.0,NoSQ,Lyon,1
+13094,master,Ball Aerospace,5.0,NoSQL,Lyon,1
 9736,master,Twitter,2.0,Tensorflow,Paris,2
 15114,phd,Eaton Vance,1.5,Python,Rennes,2
 40457,master,General Electric,1.0,Python,Lyon,2
@@ -2804,7 +2804,7 @@
 10501,phd,JLL,2.5,SPSS,Marseille,2
 23011,phd,FraudScope,1.5,Python,Paris,2
 33982,bachelor,Vertex Pharmaceuticals,0.0,C++,Paris,2
-15931,master,Capital Group,8.0,NoSQ,Bordeaux,1
+15931,master,Capital Group,8.0,NoSQL,Bordeaux,1
 12550,phd,Voxelcloud,1.5,Matlab,Rennes,2
 6125,bachelor,Analytic Recruiting,1.5,Tensorflow,Toulon,2
 30129,no diploma,Boston University,12.0,Docker,Lyon,0
@@ -2847,7 +2847,7 @@
 32641,phd,AbbVie,0.0,Python,Bordeaux,2
 32453,no diploma,Ball Aerospace,1.5,AWS,Lyon,0
 8844,master,Commonwealth of Massachusetts,8.0,Anglais,Toulouse,3
-4632,no,JUUL Labs,4.0,PostgreSQL,Paris,1
+4632,no diploma,JUUL Labs,4.0,PostgreSQL,Paris,1
 961,phd,Ball Aerospace,6.0,Python,Nantes,3
 35922,no diploma,Ball Aerospace,4.0,Docker,Paris,1
 16658,no diploma,Ball Aerospace,4.0,Perl,Lille,1
@@ -2976,7 +2976,7 @@
 42749,master,BNY Mellon,7.0,R,Rouen,3
 20762,master,23andMe,3.0,Java,Montpellier,2
 30503,no diploma,Heluna Health,0.5,Elasticsearch,Paris,1
-21307,no,Ball Aerospace,0.5,C++,Rouen,2
+21307,no diploma,Ball Aerospace,0.5,C++,Rouen,2
 37818,msc,"POWER Engineers, Inc.",3.0,Python,Lille,0
 34452,msc,McKinsey & Company,5.0,Big data,Lille,2
 24231,phd,Bank of America,1.5,Excel,Bordeaux,2
@@ -3017,7 +3017,7 @@
 26616,bachelor,Ipsos North America,3.0,R,Paris,2
 31707,master,Ball Aerospace,1.5,Docker,Paris,1
 42660,phd,Cervello Inc,2.0,Python,Toulouse,2
-29731,bachelor,Equity Residential,1.5,NoSQ,Lille,1
+29731,bachelor,Equity Residential,1.5,NoSQL,Lille,1
 22435,msc,CDM Smith,1.5,SQL,Marseille,3
 22116,phd,GroundTruth,2.0,PySpark,Paris,2
 34105,master,National Ecological Observatory Network Inc,1.0,VBA,Marseille,2
@@ -3051,7 +3051,7 @@
 32229,msc,Ball Aerospace,3.0,SAS,Marseille,2
 2414,master,Ball Aerospace,1.0,Hadoop,Nice,1
 37375,master,McKinsey & Company,9.0,Tensorflow,Nice,3
-28823,no,TUFTS University,2.0,Elasticsearch,Marseille,0
+28823,no diploma,TUFTS University,2.0,Elasticsearch,Marseille,0
 295,bachelor,Joymode,0.5,Java,Nantes,1
 11827,no diploma,Ball Aerospace,0.5,MongoDB,Marseille,0
 22710,master,Civis Analytics,1.5,Kibana,Bordeaux,0
@@ -3275,7 +3275,7 @@
 38676,bachelor,Mathematica Policy Research,3.0,Hadoop,Paris,2
 1792,phd,CACI,3.0,SQL,Paris,3
 17510,master,Georgia Tech Research Institute,1.5,Python,Nantes,1
-32738,mastere,Code Pilot,5.0,SQL,Lille,3
+32738,master,Code Pilot,5.0,SQL,Lille,3
 2369,phd,M.Gemi,2.5,SAS,Marseille,3
 7224,phd,Akili Interactive,3.0,ORACLE,Rennes,1
 22508,no diploma,Ball Aerospace,0.0,Python,Nantes,1
@@ -3422,7 +3422,7 @@
 41834,master,Ball Aerospace,1.0,R,Toulouse,3
 40959,msc,Ball Aerospace,3.0,C++,Lyon,3
 34921,master,JLL,1.5,Excel,Toulouse,2
-3929,no diploma,Marcus & Associates,4.0,NoSQ,Rouen,1
+3929,no diploma,Marcus & Associates,4.0,NoSQL,Rouen,1
 4233,phd,AMP Agency,5.0,Python,Lyon,3
 26823,master,Ball Aerospace,0.5,Excel,Montpellier,2
 9914,phd,Ball Aerospace,1.5,Python,Lille,3
@@ -3720,7 +3720,7 @@
 38614,phd,Ball Aerospace,5.0,Python,Paris,1
 39086,bsc,Tubular Labs,1.5,Python,Lille,2
 3850,msc,Ball Aerospace,1.5,Matplotlib,Nantes,2
-23920,no,Northwestern University,3.5,Scala,Toulouse,1
+23920,no diploma,Northwestern University,3.5,Scala,Toulouse,1
 16011,phd,Massachusetts Eye and Ear Infirmary,3.0,R,Toulouse,3
 32624,phd,HIRECLOUT,0.5,Matlab,Lille,2
 40116,bachelor,Splunk,4.0,SAS,Paris,3
@@ -3736,7 +3736,7 @@
 6529,phd,Ball Aerospace,9.0,SQL,Paris,2
 6836,phd,Mathematica Policy Research,1.5,VBA,Lyon,2
 9953,msc,Ball Aerospace,0.5,Python,Nice,0
-26606,bachelor,Dataiku,3.5,NoSQ,Grenoble,1
+26606,bachelor,Dataiku,3.5,NoSQL,Grenoble,1
 12172,no diploma,Trunk Club,3.5,Docker,Lille,1
 19326,phd,SpotHero,2.0,GNU,Marseille,1
 4786,master,Ball Aerospace,3.5,R,Toulon,3
@@ -4286,7 +4286,7 @@
 19692,no diploma,Ball Aerospace,4.0,Python,Strasbourg,0
 9634,master,Klaviyo,6.0,C,Toulouse,3
 25527,phd,Zylotech,6.0,Big data,Lyon,2
-38828,master,Resource Technology Partners,0.5,NoSQ,Lyon,1
+38828,master,Resource Technology Partners,0.5,NoSQL,Lyon,1
 23470,bachelor,Bank of America,2.0,Linux,Toulouse,0
 10905,master,NRG- A Stagwell Company,0.0,VBA,Lille,2
 8946,msc,COMPTROLLER OF PUBLIC ACCOUNTS,1.5,SQL,Marseille,3
@@ -4459,7 +4459,7 @@
 23366,phd,Medidata Solutions,0.5,Big data,Toulouse,2
 28845,msc,Ball Aerospace,0.5,Java,Toulouse,2
 39599,phd,CDK Global,2.0,Python,Lyon,2
-16313,no,Mars,1.0,MongoDB,Paris,0
+16313,no diploma,Mars,1.0,MongoDB,Paris,0
 8348,msc,Dana-Farber Cancer Institute,2.5,Anglais,Lyon,3
 36637,master,Emory University,7.0,AI,Marseille,2
 23105,master,KLA-Tencor,1.5,MongoDB,Toulouse,0
@@ -4826,7 +4826,7 @@
 560,phd,Sovrn Holdings,0.0,Cassandra,Marseille,1
 25313,phd,Centra Technology,1.5,Teradata,Toulouse,2
 39656,bsc,"RetailMeNot, Inc.",7.0,Tensorflow,Paris,2
-21303,no,Ball Aerospace,0.5,R,Rouen,2
+21303,no diploma,Ball Aerospace,0.5,R,Rouen,2
 5953,master,NOKIA,4.0,Tableau,Marseille,0
 8053,phd,Ball Aerospace,2.5,AWS,Marseille,0
 37779,phd,Ball Aerospace,2.0,C++,Marseille,2
@@ -5078,7 +5078,7 @@
 24279,phd,SAIC,1.5,Matplotlib,Lyon,2
 1555,msc,J.E. Ranta Associates,1.0,Tensorflow,Paris,2
 34192,phd,Catapult Sports,1.5,MongoDB,Paris,1
-32729,no,Workbridge Associates,1.5,Docker,Marseille,0
+32729,no diploma,Workbridge Associates,1.5,Docker,Marseille,0
 23758,master,Imagining Human,1.5,MySQL,Marseille,1
 27828,master,Optoro,2.5,Docker,Paris,0
 12926,bachelor,"Moxie Interactive, Inc.",4.0,Pycharm,Lyon,3
@@ -5353,7 +5353,7 @@
 25252,master,Amazon.com,2.5,SQL,Rennes,2
 22714,phd,Invicro,1.5,Python,Marseille,2
 392,master,Ball Aerospace,1.0,Yarn,Lille,1
-18486,no,DRW Trading Group,0.5,C,Paris,1
+18486,no diploma,DRW Trading Group,0.5,C,Paris,1
 30505,no diploma,Heluna Health,0.5,MongoDB,Paris,1
 5436,phd,Ball Aerospace,4.0,SQL,Lille,2
 36590,msc,Synopsys,2.0,R,Bordeaux,2
@@ -5541,7 +5541,7 @@
 7482,msc,Feedzai,1.0,HDFS,Nantes,1
 5950,master,NOKIA,4.0,Hadoop,Marseille,0
 14711,bsc,Google,3.5,R,Paris,2
-19403,no,Facebook,0.0,Elasticsearch,Lyon,0
+19403,no diploma,Facebook,0.0,Elasticsearch,Lyon,0
 16830,master,Ball Aerospace,8.0,R,Marseille,3
 11456,msc,Ball Aerospace,2.5,Python,Lille,3
 42795,master,ConAgra Foods,1.5,scikit-learn,Rennes,2
@@ -5625,7 +5625,7 @@
 1272,no diploma,Massachusetts General Hospital(MGH),6.0,GNU,Lyon,1
 24512,phd,Splunk,5.0,R,Strasbourg,3
 38659,no diploma,Asuragen,4.0,GNU,Lyon,1
-38933,mastere,CDK Global,0.0,Hadoop,Toulouse,2
+38933,master,CDK Global,0.0,Hadoop,Toulouse,2
 25425,phd,Celgene Corporation,2.0,R,Toulouse,2
 35885,master,SparkCognition,0.0,Hadoop,Lille,0
 11053,no diploma,Ball Aerospace,0.0,Python,Paris,0
@@ -5776,7 +5776,7 @@
 42209,no diploma,Jacobs,1.5,SQL,Paris,0
 29877,bachelor,SAIC,0.0,SQL,Marseille,1
 42761,bachelor,Ball Aerospace,1.0,Elasticsearch,Rouen,0
-23404,msc,Oliver James Associates,1.0,NoSQ,Marseille,1
+23404,msc,Oliver James Associates,1.0,NoSQL,Marseille,1
 22588,bsc,EY,0.5,Kibana,Lyon,1
 24798,msc,Ball Aerospace,3.5,Python,Lyon,1
 28768,master,Amazon.com,1.0,Python,Bordeaux,2
@@ -6027,7 +6027,7 @@
 33574,master,Ball Aerospace,3.5,SQL,Bordeaux,0
 24459,no diploma,Ball Aerospace,7.0,SQL,Lyon,0
 38221,msc,Biotech Partners,4.0,Yarn,Rouen,1
-12980,no,Ball Aerospace,2.5,Linux,Nice,1
+12980,no diploma,Ball Aerospace,2.5,Linux,Nice,1
 35746,master,Ball Aerospace,2.5,SQL,Nantes,3
 19758,master,The Goal Inc.,0.0,VBA,Paris,2
 34016,msc,DiDi Labs,2.5,Big data,Marseille,2
@@ -6319,7 +6319,7 @@
 25653,msc,Natera,1.0,MongoDB,Lyon,1
 11893,master,KPMG,0.5,Microsoft Azure,Nantes,2
 6682,msc,Cotiviti,6.0,C,Toulouse,2
-9945,bsc,Cars.com,0.5,NoSQ,Bordeaux,1
+9945,bsc,Cars.com,0.5,NoSQL,Bordeaux,1
 16108,master,Allstate,0.5,Python,Marseille,2
 11803,master,Nift Networks,2.0,C++,Marseille,2
 42114,phd,Allstate,1.5,Python,Rouen,2
@@ -6502,7 +6502,7 @@
 14173,msc,Ball Aerospace,1.5,SQL,Marseille,2
 8870,phd,Ball Aerospace,0.5,SQL,Lyon,2
 19966,phd,Concentric Marketing,0.0,VBA,Marseille,2
-39799,no,VHB,5.0,Kafka,Bordeaux,0
+39799,no diploma,VHB,5.0,Kafka,Bordeaux,0
 15474,phd,Technica,2.5,anglais,Paris,2
 6925,msc,Ball Aerospace,2.5,Big data,Strasbourg,3
 36992,phd,Chewy,2.0,Tensorflow,Rennes,2
@@ -6841,7 +6841,7 @@
 38465,bachelor,Ball Aerospace,1.5,scikit-learn,Montpellier,2
 39269,msc,R&D Partners,2.5,Python,Strasbourg,0
 24532,master,CMTC,1.5,Tensorflow,Bordeaux,2
-1416,no diploma,Recorded Future,4.0,NoSQ,Lyon,1
+1416,no diploma,Recorded Future,4.0,NoSQL,Lyon,1
 2685,phd,KPMG,7.0,Hive,Lyon,2
 41104,phd,Dyson,4.0,GNU,Paris,1
 8207,master,SunTrust,3.5,Java,Paris,1
@@ -7062,7 +7062,7 @@
 29240,msc,h2o.ai,11.0,machine learning,Paris,2
 40398,bachelor,Santanna Energy Services,4.0,Hadoop,Grenoble,0
 42498,phd,Ball Aerospace,2.0,scikit-learn,Rouen,2
-38932,mastere,CDK Global,0.0,Spark,Toulouse,2
+38932,master,CDK Global,0.0,Spark,Toulouse,2
 32418,msc,raag solutions,8.0,machine learning,Grenoble,2
 42055,bachelor,Loyal,1.5,Pyspark,Lyon,1
 39429,master,"Advanced Micro Devices, Inc.",1.5,Teradata,Lyon,2
@@ -7579,7 +7579,7 @@
 18042,no diploma,Natera,3.0,Java,Paris,0
 23300,msc,Norfolk Southern Corp,1.5,R,Lille,2
 6184,no diploma,AMERICAN CANCER SOCIETY,3.0,Matlab,Marseille,2
-17494,master,Ball Aerospace,1.0,NoSQ,Bordeaux,1
+17494,master,Ball Aerospace,1.0,NoSQL,Bordeaux,1
 15098,phd,The University of Chicago,2.0,PySpark,Strasbourg,2
 14369,phd,General Assembly,2.0,Tensorflow,Marseille,2
 13351,phd,Ball Aerospace,5.0,Python,Nantes,2
@@ -7604,7 +7604,7 @@
 30305,bachelor,Ball Aerospace,1.0,Scoring,Paris,2
 12473,master,Ball Aerospace,1.5,Python,Bordeaux,2
 26290,master,Ginkgo Bioworks,1.5,Hadoop,Toulouse,0
-32712,no,Ball Aerospace,5.0,Docker,Marseille,1
+32712,no diploma,Ball Aerospace,5.0,Docker,Marseille,1
 3316,msc,Nielsen,5.0,Matlab,Bordeaux,2
 8225,master,DataVisor,1.5,Teradata,Paris,2
 40106,phd,Charles River Analytics Inc.,3.5,R,Rennes,2
@@ -7779,7 +7779,7 @@
 11140,phd,Harnham,0.5,Java,Marseille,2
 4410,master,Ball Aerospace,1.5,machine learning,Marseille,2
 29147,phd,University of Texas at Austin,2.0,AWS,Lyon,0
-464,no,Ball Aerospace,2.5,Map-Reduce,Paris,1
+464,no diploma,Ball Aerospace,2.5,Map-Reduce,Paris,1
 40823,no diploma,Ball Aerospace,1.0,MariaDB,Marseille,1
 23227,master,Ball Aerospace,2.5,Java,Marseille,1
 22125,bachelor,Ball Aerospace,6.0,Excel,Toulon,3
@@ -8016,14 +8016,14 @@
 2091,master,M.Gemi,6.0,HBASE,Nantes,1
 41981,phd,Draper,3.5,R,Paris,2
 30846,master,Burns & McDonnell,1.5,Java,Strasbourg,1
-29876,bachelor,SAIC,0.0,NoSQ,Marseille,1
+29876,bachelor,SAIC,0.0,NoSQL,Marseille,1
 3599,master,KPMG,4.0,Java,Paris,0
 25029,phd,"Crop One Holdings, Inc.",0.5,Tensorflow,Strasbourg,2
 22634,phd,Wood,7.0,Spark,Rennes,2
 13538,bachelor,Amazon.com,1.5,SQL,Lille,2
 33156,phd,Benenson Strategy Group,4.0,Cassandra,Lille,0
 24846,msc,Planned Systems International,3.0,VBA,Paris,2
-33764,no diploma,SimScale,6.0,NoSQ,Lille,1
+33764,no diploma,SimScale,6.0,NoSQL,Lille,1
 16744,master,Burns & McDonnell,5.0,Python,Toulouse,3
 6803,phd,Brigham & Women's Hospital(BWH),1.5,Java,Lyon,1
 6333,bachelor,KNIME,1.5,Python,Lyon,3
@@ -8549,7 +8549,7 @@
 6483,phd,Ball Aerospace,0.5,Java,Lyon,1
 12632,phd,FabFitFun,0.5,machine learning,Paris,2
 18461,msc,Nanigans,3.5,Python,Bordeaux,2
-14858,master,The Climate Corporation,1.5,NoSQ,Paris,1
+14858,master,The Climate Corporation,1.5,NoSQL,Paris,1
 29407,bsc,bluebird bio,2.5,scikit-learn,Bordeaux,2
 37300,phd,KCS Partners,0.5,Python,Rennes,2
 23864,bsc,Ball Aerospace,2.0,R,Strasbourg,2
@@ -8602,7 +8602,7 @@
 30866,msc,Pharmerit International,2.0,Hive,Paris,0
 32669,master,Mars,2.5,R,Marseille,2
 24790,master,Ball Aerospace,2.5,machine learning,Lyon,3
-22834,no diploma,DELL,1.5,NoSQ,Bordeaux,1
+22834,no diploma,DELL,1.5,NoSQL,Bordeaux,1
 31287,bsc,Prestige Staffing,1.5,C,Lyon,2
 30386,phd,Ball Aerospace,1.5,Hadoop,Paris,0
 4075,phd,KPMG,1.5,R,Paris,2
@@ -8634,7 +8634,7 @@
 16146,bachelor,Ball Aerospace,2.0,Python,Rennes,2
 20430,master,Ball Aerospace,1.0,Java,Rennes,2
 35607,msc,Ball Aerospace,1.5,HDFS,Paris,1
-17792,master,Ball Aerospace,5.0,NoSQ,Paris,1
+17792,master,Ball Aerospace,5.0,NoSQL,Paris,1
 41797,phd,Draper,0.5,Big data,Nantes,2
 32557,msc,McKinsey & Company,3.5,Python,Bordeaux,3
 11626,phd,JUUL Labs,1.5,Excel,Lyon,3
