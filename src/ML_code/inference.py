@@ -18,8 +18,8 @@ def make_predictions(input_data: pd.DataFrame) -> np.ndarray:
     else:
         X = data
     # print(X)
-    Ordinal, Not_Ordinal, numeric = preprocess_py.split_(X)
-    x_test = preprocess_py.preprocess(Ordinal, Not_Ordinal, numeric,
+    Ordinal, numeric = preprocess_py.split_(X)
+    x_test = preprocess_py.preprocess(Ordinal, numeric,
                                       dataset_Typee=True)
     
     loaded_model = joblib.load(model_name)

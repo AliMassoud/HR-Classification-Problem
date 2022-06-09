@@ -74,10 +74,11 @@ def build_model(data: pd.DataFrame) -> dict[str, str]:
     x_test = preprocess_py.preprocess(Ord_test,
                                       numeric_test, dataset_Typee=True)
 # Tune the model
-    best_score, best_params =Tune_Random_Forest(x_train, y_train)
-    print(best_score)
+    # best_score, best_params =Tune_Random_Forest(x_train, y_train)
+    # print(best_score)
 
-    mod = RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
+    mod = DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 16)
+    # RandomForestClassifier(bootstrap=best_params['bootstrap'], min_samples_split=best_params['min_samples_split'],n_estimators=best_params['n_estimators'])
     # DecisionTreeClassifier(criterion = 'entropy', random_state = 0, max_depth = 8)
 
 # fit the model & save it in Models directory + print the Metrics of the model (Precision + Recall)

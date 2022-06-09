@@ -1,3 +1,4 @@
+from re import X
 import string
 import numpy as np
 import pandas as pd
@@ -50,7 +51,7 @@ def Encoded_Ordinal(categorical_features_Ord: pd.DataFrame) -> pd.DataFrame:
 
 # split data to Numeric, Nominal and Ordinal
 def split_(x: pd.DataFrame):
-    Ordinal = x[['Diplome', 'Technologies', 'Ville', 'Entreprise']]
+    Ordinal = x[['Diplome', 'Technologies', 'Ville']]
     # Not_Ordinal = x[['Technologies', 'Ville', 'Entreprise']]
     numeric = x[['Experience']]
     # return Ordinal, Not_Ordinal, numeric
@@ -117,6 +118,7 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
         # oh_encoder.fit(Not_Ordinal)
         dump(enc, open(ordinal_encoder_file, "wb"))
         # dump(oh_encoder, open(one_hot_encoder_file, "wb"))
+
     ordinal = Encoded_Ordinal(Ordinal)
     # Not_ordinal = get_Encoded_OneHot_Encoder(Not_Ordinal)
     ordinal.reset_index()
@@ -126,8 +128,8 @@ def preprocess(Ordinal: pd.DataFrame, numeric, dataset_Typee):
     numeric_ordinal = numeric_ordinal.fillna(numeric_ordinal.median())
     numeric_ordinal.rename(columns = {'(Experience,)':'Experience'}, inplace = True)
     # final = numeric_norminal.join(Not_ordinal)
-    # numeric_ordinal.interpolate(method='linear', limit_direction='forward', inplace=True)
-    # numeric_ordinal.interpolate(method='linear', limit_direction='backward', inplace=True)
+    numeric_ordinal.interpolate(method='linear', limit_direction='forward', inplace=True)
+    numeric_ordinal.interpolate(method='linear', limit_direction='backward', inplace=True)
 
-    # x = scale_final_data(numeric_ordinal, dataset_Typee)
-    return numeric_ordinal
+    x = scale_final_data(numeric_ordinal, dataset_Typee)
+    return x

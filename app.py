@@ -18,9 +18,12 @@ def submit():
 
     # Percentage calculation    
     final = (df['Result'].value_counts()/df['Result'].count())*100
-    print(final)
+    # print(final)
     
     temp_df = final.to_frame()
+    temp_df.sort_values(by='Result')
+    print(temp_df)
+    # print(temp_df['Result'][0])
     temp_df['Result'] = temp_df['Result'].astype(str) + '%'
     return {
     "Entreprise": my_data['Entreprise'].values[0],
