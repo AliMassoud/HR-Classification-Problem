@@ -28,9 +28,9 @@ def compute_metrics(y_pred, y_test, model_name_):
     precision = round(precision_score(y_test, y_pred, average='micro'),2)
     recall = round(recall_score(y_test, y_pred, average='micro'),2)
     
-    print('Accuracy (proportion of correct predictions) is ' + str(accuracy))
-    print('Precision (proportion of true purchases among purchase predictions) is ' + str(precision))
-    print('Recall (proportion of true purchases that are correctly predicted) is ' + str(recall))
+    print('Accuracy is ' + str(accuracy))
+    print('Precision is ' + str(precision))
+    print('Recall is ' + str(recall))
     return pd.DataFrame({
         'Accuracy': accuracy,
         'Precision': precision,
