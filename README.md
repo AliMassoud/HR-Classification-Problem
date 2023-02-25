@@ -1,5 +1,7 @@
-# Weclome PIVOT_CO Team ^_^
-Kindly run this before running the code  
+# Weclome to HR Classification problem
+This repo demonstrates a testing solution to industrialize a classification model that helps HR whether the candidate competences match data engineer, data science or data analysis position.
+
+Kindly run this before running the code ti install the required packages  
 ```
 pip install -r requirement.txt
 ```
@@ -19,11 +21,11 @@ the Route of the API is: **/Submit**
 and please use this JSON format in Postman program or any other program to test it:
 ```json
 {
-    "Entreprise": "pivot&CO",
+    "Entreprise": "ali",
     "Technologies": "Python/Microsoft Azure/R/SQL",
     "Diplome": "Master",
     "Experience": "7",
-    "Ville": "Toulouse"
+    "Ville": "Paris"
 }
 ```
 - For testing using .csv file, kindly use the Route **/SubmitFile**.  
@@ -33,6 +35,3 @@ To run the **ML-model** (Training) please execute this
 python3 main.py
 ```
 > :warning: It will take some time because of the model tuning, sorry about that ^_^
- 
-**Note:**
-Looking forward to meeting you tomorrow ^_^
